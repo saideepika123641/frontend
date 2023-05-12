@@ -1,0 +1,22 @@
+<form  action="login" #f="ngForm" novalidate (ngSubmit)="f.form.valid&&onSubmit()" >
+    <div class="loginpage">
+    <h1>Login</h1>
+    <div style="background-color:  #b89f9d; height: 2000px;">
+    <br>
+    <input type="email"  class="text" name="email"  id="email" placeholder="Enter email"  [(ngModel)]="formdata.email" #email="ngModel" required>
+    <br>
+    <span style="color: black;" class="text-danger" *ngIf="this.submit&&email.errors?.['required']" >
+    *Email is required
+    <br>
+    </span>
+    <br>
+    <input  class = "text" type="password" placeholder="Enter Password" id="passward"  name="password" [(ngModel)]="formdata.password" #password="ngModel" required >
+    <br>
+    <span style="color: black;" class="text-danger" *ngIf="this.submit&&password.errors?.['required']">
+    *Password is required.
+    </span>
+    <br>
+    <pre style="color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">                              <input  type="submit" class="loginbtn"  value="Login" (click)="submit=true" style="color: black; position:absolute;">                       New User/admin? <a routerLink="/signup" class="nav-link" routerLinkActive="active" id="signupLink">Sign Up</a></pre>
+    </div>  
+    </div>
+    </form>

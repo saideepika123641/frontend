@@ -1,0 +1,25 @@
+.loginpage
+{
+    text-align: center;
+    color: white;
+    background:rgb(2, 2, 1);
+    padding: 1;
+    text-align: center; 
+    height: 50px;
+}
+.text
+{
+    text-align: center;
+    height: 25px;
+    width: 200px;
+    background-image: linear-gradient(to left,  #a4a29f, white);
+}
+.loginbtn
+{
+    height: 30px;
+    width: 90px;
+    font-size: medium;
+    color: white;
+    background-image: linear-gradient(to left,  #20102b, rgb(136, 101, 168));
+    text-decoration: double;
+}
